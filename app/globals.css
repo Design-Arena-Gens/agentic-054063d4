@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --card: 255 255 255;
+}
+
+/* Components */
+.container-narrow { @apply max-w-3xl mx-auto px-4; }
+.card { @apply bg-white shadow-sm ring-1 ring-gray-200 rounded-xl; }
+.btn { @apply inline-flex items-center justify-center font-medium rounded-lg px-4 py-2 transition-colors; }
+.btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
+.btn-secondary { @apply bg-gray-100 text-gray-900 hover:bg-gray-200; }
+.btn-ghost { @apply bg-transparent text-gray-700 hover:bg-gray-100; }
+.badge { @apply inline-flex items-center px-2 py-0.5 rounded-md text-xs font-medium; }
+.progress { @apply h-2 w-full rounded-full bg-gray-200 overflow-hidden; }
+.progress > span { @apply block h-full bg-brand-600 transition-all; }
+
+/* Utilities */
+.lead { @apply text-lg text-gray-600; }
+.title { @apply text-3xl font-bold tracking-tight; }
+.subtitle { @apply text-sm text-gray-500; }
